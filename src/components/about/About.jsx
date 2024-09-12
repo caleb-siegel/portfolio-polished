@@ -1,6 +1,6 @@
 import React from 'react';
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
+import AboutImg from "../../assets/Caleb.jpg";
 import Resume from "../../assets/Caleb-Siegel-Resume.pdf";
 import Info from './Info';
 
@@ -16,7 +16,7 @@ const About = () => {
             <div className="about__data">
                 <Info />
 
-                <p className="about__description">Full-stack software engineer excited to solve complex and interesting problems.</p>
+                <p className="about__description">Full-stack software engineer with 7 years' business experience and excited to solve complex and interesting problems.</p>
 
                 <a href={Resume} className="button button--flex" target="_blank" rel="noopener noreferrer">View Resumè
                     <svg
