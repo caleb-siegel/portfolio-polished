@@ -37,20 +37,20 @@ const Frontend = () => {
                 </div>
 
                 <div className="skills__data">
-                    <i class='bx bx-badge-check skills-icon'></i>
-
-                    <div>
-                        <h3 className="skills__name">Vite</h3>
-                        <span className="skills__level">Basic</span>
-                    </div>
-                </div>
-
-                <div className="skills__data">
                     <i class='bx bxl-react skills-icon' ></i>
 
                     <div>
                         <h3 className="skills__name">React</h3>
                         <span className="skills__level">Intermediate</span>
+                    </div>
+                </div>
+
+                <div className="skills__data">
+                    <i class='bx bx-badge-check skills-icon'></i>
+
+                    <div>
+                        <h3 className="skills__name">Vite</h3>
+                        <span className="skills__level">Basic</span>
                     </div>
                 </div>
 
