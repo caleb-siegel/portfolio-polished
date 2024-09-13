@@ -32,7 +32,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">caleb.siegel@gmail.com</span>
 
-                            <a href="" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="mailto:caleb.siegel@gmail.com" className="contact__button" target="_blank" rel="noopener noreferrer">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
@@ -41,17 +41,17 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">(551) 486-7067</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=5514867067&text=Hello, more information!" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5514867067&text=Hi Caleb! I just saw your website and wanted to reach out." className="contact__button" target="_blank" rel="noopener noreferrer">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
-                        <div className="contact__card">
+                        {/* <div className="contact__card">
                             <i className="bx bxl-messenger contact__card-icon"></i>
 
                             <h3 className="contact__card-title">messenger</h3>
                             <span className="contact__card-data"></span>
 
                             <a href="mailto:caleb.siegel@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
