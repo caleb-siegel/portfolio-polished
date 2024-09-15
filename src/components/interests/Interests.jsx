@@ -1,19 +1,19 @@
 import React from 'react';
 import { Data } from './Data';
-import "./testimonial.css";
+import "./interests.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 
-const Testimonials = () => {
+const Interests = () => {
   return (
-    <section className="testimonial container section">
+    <section className="interests container section">
         <h2 className="section__title">Interests</h2>
         <span className="section__subtitle">What Makes Me... Me </span>
 
-        <Swiper className="testimonial__container"
+        <Swiper className="interests__container"
             modules={[ Pagination ]}
             spaceBetween={24}
             slidesPerView={1.3}
@@ -34,13 +34,19 @@ const Testimonials = () => {
             }}
             pagination={{ clickable: true }}
         >
-            {Data.map(({id, image, title, description}) => {
+            {Data.map(({id, image, title, description, link_title, link, name_icon}) => {
                 return (
-                    <SwiperSlide className='testimonial__card' key={id}>
-                        <img src={image} alt="" className="testimonial__img" />
+                    <SwiperSlide className='interests__card' key={id}>
+                        <img src={image} alt="" className="interests__img" />
 
-                        <h3 className="testimonial__name">{title}</h3>
-                        <p className="testimonial__description">{description}</p>
+                        <h3 className="interests__name">{title}
+                            <i className={name_icon}></i>
+                        </h3>
+                        <p className="interests__description">{description}</p>
+                        {link ? <a href={link} className="interests__button" target="_blank" rel="noopener noreferrer">
+                            {link_title} <i className="bx bx-right-arrow-alt interests__button-icon"></i>
+                        </a>
+                        : ""}
                     </SwiperSlide>
                 )
             })}
@@ -49,4 +55,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default Interests

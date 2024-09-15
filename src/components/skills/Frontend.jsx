@@ -3,7 +3,7 @@ import React from 'react'
 const Frontend = () => {
   return (
     <div className="skills__content">
-        <h3 className="skills__title">Frontend Developer 
+        <h3 className="skills__title">Frontend 
             <i class='bx bx-badge-check skills-icon'></i>
         </h3>
 
@@ -46,7 +46,7 @@ const Frontend = () => {
                 </div>
 
                 <div className="skills__data">
-                    <i class='bx bx-badge-check skills-icon'></i>
+                    <i class='bx bx-buildings skills-icon'></i>
 
                     <div>
                         <h3 className="skills__name">Vite</h3>
@@ -55,7 +55,7 @@ const Frontend = () => {
                 </div>
 
                 <div className="skills__data">
-                    <i class='bx bx-badge-check skills-icon'></i>
+                    <i class='bx bxl-google skills-icon'></i>
 
                     <div>
                         <h3 className="skills__name">Material UI</h3>

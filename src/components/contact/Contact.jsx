@@ -19,7 +19,7 @@ const Contact = () => {
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+            <span className="section__subtitle">Reach Out</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
@@ -27,12 +27,21 @@ const Contact = () => {
 
                     <div className="contact__info">
                         <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
+                            <i className="bx bx-envelope contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">caleb.siegel@gmail.com</span>
 
-                            <a href="mailto:caleb.siegel@gmail.com" className="contact__button" target="_blank" rel="noopener noreferrer">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="mailto:caleb.siegel@gmail.com" className="contact__button" target="_blank" rel="noopener noreferrer">Email me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        </div>
+
+                        <div className="contact__card">
+                            <i className="bx bx-phone contact__card-icon"></i>
+
+                            <h3 className="contact__card-title">Call</h3>
+                            <span className="contact__card-data">(551) 486-7067</span>
+
+                            <a href="tel:+15514867067" className="contact__button" target="_blank" rel="noopener noreferrer">Call me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
@@ -41,7 +50,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">(551) 486-7067</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=5514867067&text=Hi Caleb! I just saw your website and wanted to reach out." className="contact__button" target="_blank" rel="noopener noreferrer">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5514867067&text=Hi Caleb! I just saw your website and wanted to reach out." className="contact__button" target="_blank" rel="noopener noreferrer">Text me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         {/* <div className="contact__card">
@@ -56,7 +65,7 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me your project</h3>
+                    <h3 className="contact__title">Shoot me a message</h3>
 
                     {!submitted ?
                         <form ref={form} onSubmit={sendEmail} className="contact__form">
