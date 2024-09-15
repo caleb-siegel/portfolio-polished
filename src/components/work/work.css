@@ -45,24 +45,26 @@
     margin-bottom: var(--mb-0-5);
 }
 
-.work__button {
+.work__modal-button {
     color: var(--text-color);
     font-size: var(--small-font-size);
     display: flex;
     align-items: center;
     column-gap: 0.25rem;
+    margin-top: 2rem;
+    justify-content: center;
 }
 
-.work__button-icon {
+.work__modal-button-icon {
     font-size: 1rem;
     transition: 0.4s;
 }
 
-.work__button:hover {
+.work__modal-button:hover {
     color: var(--title-color-dark);
 }
 
-.work__button:hover .work__button-icon {
+.work__modal-button:hover .work__modal-button-icon {
     transform: translateX(0.25rem);
 }
 
@@ -70,6 +72,154 @@
 .active-work {
     background-color: var(--title-color);
     color: var(--container-color);
+}
+
+.work__see-more-button {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+}
+
+.work__see-more-button-icon {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.work__see-more-button:hover {
+    transform: translateX(00.25rem);
+}
+
+.work__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.work__modal-content {
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.work__modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.work__modal-title,
+.work__modal-description {
+    text-align: center;
+}
+
+.work__modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.work__modal-subtitle {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
+    margin: -0.3rem;
+    padding-left: 1rem;
+}
+
+.work__modal-subtitle-icon {
+    color: var(--text-color);
+    font-size: 0.4rem;
+    margin-right: .5rem;
+}
+
+.work__modal-description {
+    font-size: var(--small-font-size);
+    padding: 0 3.5rem;
+    /* margin-bottom: var(--mb-0-25); */
+}
+
+.work__modal-work {
+    row-gap: 0.75rem;
+}
+
+.work__modal-qual {
+    display: flex;
+    /* align-items: top; */
+    column-gap: .5rem;
+}
+
+.work__modal-icon {
+    color: var(--text-color);
+    font-size: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.work__modal-info {
+    font-size: var(--smaller-font-size);
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.work__modal-content-grid {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.work__modal-tech-name {
+    font-size: var(--tiny-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.work__modal-technologies {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.work__modal-technology {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-top: var(--mb-0-5);
+}
+
+.work__modal-tech-icon {
+    font-size: var(--tiny-font-size);
+    align-self: center;
+}
+
+.work__modal-label {
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -107,7 +257,28 @@
         width: 100%;
     }
 
+    .work__modal {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
 
+    .work__modal-description {
+        padding: 0;
+    }
+
+    .work__modal-content-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work__modal-technologies {
+        margin-top: 1rem;
+        width: 200px;
+    }
+
+    .work__modal-technology {
+        justify-content: center;
+    }
   }
 
   @media screen and (max-width: 350px) {
