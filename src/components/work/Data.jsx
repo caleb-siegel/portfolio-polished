@@ -1,6 +1,6 @@
-import Work1 from "../../assets/souschef.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
+import Work1 from "../../assets/sous-chef.png";
+import Work2 from "../../assets/python-roulette.png";
+import Work3 from "../../assets/bcom.png";
 import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
 
