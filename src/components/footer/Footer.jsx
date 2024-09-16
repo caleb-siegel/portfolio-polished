@@ -30,21 +30,21 @@ const Footer = () => {
                     <i class="bx bxl-github"></i>
                 </a>
 
-                <a href="https://www.facebook.com/caleb.siegel.5" className="footer__social-link" target="_blank">
+                {/* <a href="https://www.facebook.com/caleb.siegel.5" className="footer__social-link" target="_blank">
                     <i class="bx bxl-facebook"></i>
-                </a>
+                </a> */}
 
-                <a href="https://www.instagram.com/kbsiegel/" className="footer__social-link" target="_blank">
+                {/* <a href="https://www.instagram.com/kbsiegel/" className="footer__social-link" target="_blank">
                     <i class="bx bxl-instagram"></i>
-                </a>
+                </a> */}
 
                 {/* <a href="https://medium.com/@caleb.siegel" className="home__social-social-link" target="_blank">
                     <i class="uil uil-medium-alt"></i>
                 </a> */}
 
-                <a href="https://www.youtube.com/@calebsiegel1" className="footer__social-link" target="_blank">
+                {/* <a href="https://www.youtube.com/@calebsiegel1" className="footer__social-link" target="_blank">
                     <i class="bx bxl-youtube"></i>
-                </a>
+                </a> */}
             </div>
 
             <span className="footer__copy">&#169; Caleb Siegel. All rights reserved</span>

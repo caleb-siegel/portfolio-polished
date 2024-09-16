@@ -8,24 +8,24 @@ const Social = () => {
         </a>
 
         <a href="https://github.com/caleb-siegel" className="home__social-icon" target="_blank">
-            <i class="uil uil-github-alt"></i>
+            <i class="uil uil-github"></i>
         </a>
 
-        <a href="https://www.facebook.com/caleb.siegel.5" className="home__social-icon" target="_blank">
+        {/* <a href="https://www.facebook.com/caleb.siegel.5" className="home__social-icon" target="_blank">
             <i class="uil uil-facebook"></i>
-        </a>
+        </a> */}
 
-        <a href="https://www.instagram.com/kbsiegel/" className="home__social-icon" target="_blank">
+        {/* <a href="https://www.instagram.com/kbsiegel/" className="home__social-icon" target="_blank">
             <i class="uil uil-instagram"></i>
-        </a>
+        </a> */}
 
         {/* <a href="https://medium.com/@caleb.siegel" className="home__social-icon" target="_blank">
             <i class="uil uil-medium-alt"></i>
         </a> */}
 
-        <a href="https://www.youtube.com/@calebsiegel1" className="home__social-icon" target="_blank">
+        {/* <a href="https://www.youtube.com/@calebsiegel1" className="home__social-icon" target="_blank">
             <i class="uil uil-youtube"></i>
-        </a>
+        </a> */}
     </div>
   )
 }
