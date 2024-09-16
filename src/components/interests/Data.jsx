@@ -27,7 +27,7 @@ export const Data = [
       image: Image3,
       title: "Microsoft Excel",
       description: "Built 35-tab dynamic model predicting possible March Madness outcomes. Also distributed daily Excel tips through email newsletter, Mouse~less Modeling.",
-      link_title: "Download Sheet",
+      link_title: "View Sheet",
       link: "https://docs.google.com/spreadsheets/d/1IefNb-Vw5TF-1Iq5ZHCoY1LZlFBzCUL3/edit?gid=789715715#gid=789715715",
       name_icon: "uil uil-file-info-alt interests__name-icon",
     },

@@ -47,6 +47,8 @@ const Interests = () => {
                             {link_title} <i className="bx bx-right-arrow-alt interests__button-icon"></i>
                         </a>
                         : ""}
+                        {title === "Microsoft Excel" && 
+                        <a href="../../public/mouse-less-modeling.eml" download="mouse-less-modeling.eml" className="interests__button">Download Sample Email <i className="bx bx-right-arrow-alt interests__button-icon"></i></a>  }
                     </SwiperSlide>
                 )
             })}
