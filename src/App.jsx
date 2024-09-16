@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Work from './components/work/Work';
 import Interests from './components/interests/Interests';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
       <Footer />
       <ScrollUp />
+      <Analytics />
     </>
   )
 }
