@@ -1,8 +1,7 @@
 import Work1 from "../../assets/sous-chef.png";
 import Work2 from "../../assets/python-roulette.png";
 import Work3 from "../../assets/bcom.png";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import Work4 from "../../assets/mojito-walkthrough.png";
 
 export const projectsData = [
     {
@@ -19,12 +18,13 @@ export const projectsData = [
         "Utilized React for efficient frontend development and Material UI for simple frontend design",
       ],
       modal_technologies: [
+        {"id": 6, "name": "Material-UI", "class": "bx bxl-google work__modal-tech-icon"},
         {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
         {"id": 2, "name": "Python", "class": "bx bxl-python work__modal-tech-icon"},
         {"id": 3, "name": "React", "class": "bx bxl-react work__modal-tech-icon"},
         {"id": 4, "name": "Flask", "class": "bx bxl-flask work__modal-tech-icon"},
         {"id": 5, "name": "Vite", "class": "bx bx-buildings work__modal-tech-icon"},
-        {"id": 6, "name": "Material-UI", "class": "bx bxl-google work__modal-tech-icon"},
+        
     ],
     },
     {
@@ -64,9 +64,11 @@ export const projectsData = [
       image: Work4,
       title: "Mojito Budgeting",
       category: "fullstack",
-      link: "",
+      link: "https://vimeo.com/1009850454/338de610f1?share=copy",
       modal_description: "Budgeting app alternative to recently discontinued Mint",
       modal_info: [
+        "Construct database through Flask and SQLAlchemy",
+        "Use bcrypt to encrypt passwords and enable secure login",
       ],
       modal_technologies: [
         {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
