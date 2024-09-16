@@ -9,7 +9,7 @@
     border-radius: 1.5rem;
     margin-bottom: var(--mb-3);
     width: 100%; /* Full width of the SwiperSlide */
-    height: 300px; /* Fixed height, adjust as needed */
+    height: max-content; /* Fixed height, adjust as needed */
     display: flex;
     flex-direction: column; /* Vertical arrangement */
     justify-content: space-between; /* Distribute content evenly */
@@ -19,7 +19,7 @@
 .interests__img {
     width: 60px;
     border-radius: 3rem;
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-1);    
 }
 
 .interests__name {

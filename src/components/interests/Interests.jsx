@@ -37,7 +37,7 @@ const Interests = () => {
             {Data.map(({id, image, title, description, link_title, link, name_icon}) => {
                 return (
                     <SwiperSlide className='interests__card' key={id}>
-                        <img src={image} alt="" className="interests__img" />
+                        {/* <img src={image} alt="" className="interests__img" /> */}
 
                         <h3 className="interests__name">{title}
                             <i className={name_icon}></i>
