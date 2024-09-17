@@ -1,18 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import "./qualification.css";
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(2);
+    const [toggleModal, setToggleModal] = useState(0);
+
+    const modalRef = useRef(null); // Ref to track modal content
 
     const toggleTab = (index) => {
         setToggleState(index);
     };
 
-    const [toggleModal, setToggleModal] = useState(0);
-
     const handleToggleModal = (index) => {
         setToggleModal(index);
     };
+
+    // useEffect to handle clicks outside the modal
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // If the click is outside the modal content, close the modal
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                setToggleModal(0);
+            }
+        };
+
+        // Add event listener when the modal is open
+        if (toggleModal !== 0) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        // Cleanup the event listener when the modal is closed
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [toggleModal]);
     
     return (
         <section className="qualification section">
@@ -45,7 +66,7 @@ const Qualification = () => {
                                 </span>
 
                                 <div className={toggleModal === 1 ? "qualification__modal active-modal" : "qualification__modal"}>
-                                    <div className="qualification__modal-content">
+                                    <div className="qualification__modal-content" ref={modalRef}>
                                         <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
 
                                         <h3 className="qualification__modal-title">Flatiron School</h3>
@@ -97,7 +118,7 @@ const Qualification = () => {
                                 </span>
 
                                 <div className={toggleModal === 2 ? "qualification__modal active-modal" : "qualification__modal"}>
-                                    <div className="qualification__modal-content">
+                                    <div className="qualification__modal-content" ref={modalRef}>
                                         <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
 
                                         <h3 className="qualification__modal-title">Yeshiva University</h3>
