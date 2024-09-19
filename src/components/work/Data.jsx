@@ -15,10 +15,10 @@ export const projectsData = [
         "Mapped out ERD with whiteboard platform, Miro, for organized database structure",
         "Wrote backend with Flask and SQLAlchemy for simple communication between frontend and backend",
         "Initiated frontend with Vite for fast file creation, transitioning midway from Create-React-App, to solve proxy errors",
-        "Utilized React for efficient frontend development and Material UI for simple frontend design",
+        "Utilized React and Material UI for efficient frontend development and styling",
       ],
       modal_technologies: [
-        {"id": 6, "name": "Material-UI", "class": "bx bxl-google work__modal-tech-icon"},
+        {"id": 6, "name": "Material UI", "class": "bx bxl-google work__modal-tech-icon"},
         {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
         {"id": 2, "name": "Python", "class": "bx bxl-python work__modal-tech-icon"},
         {"id": 3, "name": "React", "class": "bx bxl-react work__modal-tech-icon"},

@@ -8,6 +8,7 @@
     width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .about__info {
