@@ -18,6 +18,10 @@
     margin-bottom: var(--mb-1-5);
 }
 
+.title-icon {
+    margin-left: 0.15rem;
+}
+
 .skills__box {
     display: flex;
     justify-content: center;
@@ -29,6 +33,7 @@
     grid-template-columns: repeat(2, 150px);
     align-items: flex-start;
     row-gap: 1rem;
+    margin-left: 1rem;
 }
 
 .skills__data {

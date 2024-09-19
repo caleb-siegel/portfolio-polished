@@ -4,7 +4,7 @@ const Backend = () => {
   return (
     <div className="skills__content">
         <h3 className="skills__title">Backend
-            <i class='bx bx-badge-check skills-icon'></i>
+            <i class='bx bx-badge-check skills-icon title-icon'></i>
         </h3>
 
         <div className="skills__box">
