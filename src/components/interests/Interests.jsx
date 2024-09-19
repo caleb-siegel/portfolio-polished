@@ -22,10 +22,10 @@ const Interests = () => {
             centeredSlides={true}
             breakpoints={{
                 350: {
-                    slidesPerView: 2,
+                    slidesPerView: 1.7,
                 },
                 576: {
-                    slidesPerView: 2,
+                    slidesPerView: 1.7,
                 },
                 768: {
                     slidesPerView: 2,
@@ -43,12 +43,13 @@ const Interests = () => {
                             <i className={name_icon}></i>
                         </h3>
                         <p className="interests__description">{description}</p>
-                        {link ? <a href={link} className="interests__button" target="_blank" rel="noopener noreferrer">
-                            {link_title} <i className="bx bx-right-arrow-alt interests__button-icon"></i>
-                        </a>
+                        {link ? 
+                            <a href={link} className="interests__button" target="_blank" rel="noopener noreferrer">
+                                {link_title} <i className="bx bx-right-arrow-alt interests__button-icon"></i>
+                            </a>
                         : ""}
-                        {title === "Microsoft Excel" && 
-                        <a href="../../public/mouse-less-modeling.eml" download="mouse-less-modeling.eml" className="interests__button">Download Sample Email <i className="bx bx-right-arrow-alt interests__button-icon"></i></a>  }
+                        {title === "Excel" && 
+                        <a href="../../public/mouse-less-modeling.eml" download="mouse-less-modeling.eml" className="interests__button">See Sample Email <i className="bx bx-right-arrow-alt interests__button-icon"></i></a>  }
                     </SwiperSlide>
                 )
             })}
