@@ -17,7 +17,9 @@ const About = () => {
             <div className="about__data">
                 <Info />
 
-                <p className="about__description">Full-stack software engineer with 7 years of business experience, excited to continue solving interesting and complex problems.</p>
+                {/* <p className="about__description">Former equity research analyst and digital marketing leader of 5 years, whose passion for Excel, specifically problem-solving, debugging, and building innovative solutions, led to a career shift into software engineering. Bootcamp-educated and incredibly excited to continue growing as a developer while solving interesting and complex problems.</p> */}
+                <p className="about__description">Former equity research analyst and digital marketing leader of 5 years, with a passion for Excel—specifically problem-solving, debugging, and building innovative solutions—that led to a career shift into software engineering. Bootcamp-educated and eager to continue growing as a developer while tackling complex and interesting challenges.</p>
+
 
                 <a href={Resume} className="button button--flex" target="_blank" rel="noopener noreferrer">View Resumè
                     <svg
