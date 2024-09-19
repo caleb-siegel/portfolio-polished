@@ -37,6 +37,9 @@
 
 .about__subtitle {
     font-size: var(--tiny-font-size);
+    line-height: -1 !important;
+    display: block;
+    margin-top: 0.25rem;
 }
 
 .about__description {
