@@ -9,7 +9,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const Interests = () => {
   return (
-    <section className="interests container section">
+    <section className="interests container section" id='interests'>
         <h2 className="section__title">Interests</h2>
         <span className="section__subtitle">What Makes Me... Me </span>
 
