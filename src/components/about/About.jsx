@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/Caleb.jpg";
-import AboutImg2 from "../../assets/hawaii.jpg"
+import AboutImg2 from "../../assets/hawaii.webp"
 import Resume from "../../assets/Caleb-Siegel-Resume.pdf";
 import Info from './Info';
 
