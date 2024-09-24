@@ -9,8 +9,8 @@ export const Data = [
       image: Image1,
       title: "Broadway",
       description: "Lead 250+ person WhatsApp group utilizing Stubhub's API to provide real-time information on affordable, last minute Broadway tickets.",
-      link_title: "",
-      link: "",
+      link_title: "Join Group",
+      link: "https://chat.whatsapp.com/4Pdv4aIdyfh02L26DWkGAf",
       name_icon: "uil uil-favorite interests__name-icon",
     },
     {
