@@ -69,7 +69,7 @@ const WorkItems = ({ item }) => {
           </div>
 
           <a href={item.link} className="work__modal-button" target="_blank" rel="noopener noreferrer">
-            Watch Demo <i className="bx bx-right-arrow-alt work__modal-button-icon"></i>
+            {item.title === "Broadway Community" ? "See Live Website" : "Watch Demo"} <i className="bx bx-right-arrow-alt work__modal-button-icon"></i>
           </a>
         </div>
       </div>

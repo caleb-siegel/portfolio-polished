@@ -1,10 +1,31 @@
 import Work1 from "../../assets/sous-chef.png";
 import Work2 from "../../assets/python-roulette.png";
-import Work3 from "../../assets/bcom.png";
+import Work3 from "../../assets/broadwaycommunity.png";
 import Work4 from "../../assets/mojito-walkthrough.png";
 
 export const projectsData = [
-    {
+  {
+    id: 3,
+    image: Work3,
+    title: "Broadway Community",
+    category: "fullstack",
+    link: "https://broadwaycommunity.vercel.app/",
+    modal_description: "Price alert app utilizing Stubhub’s API to display the cheapest ticket to each Broadway show",
+    modal_info: [
+      "Utilized Postman to test StubHub API endpoints and generated bearer tokens with API keys for secure data access",
+      "Retrieved and organized ticket data from StubHub API in the backend to enable streamlined frontend communication",
+      "Developed ticket price sliders with Swiper.js, ensuring smooth transitions and touch-friendly navigation",
+      "Integrated affiliate links into ticket pages for revenue generation through the Partnerize platform"
+    ],
+    modal_technologies: [
+      {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
+      {"id": 2, "name": "Python", "class": "bx bxl-python work__modal-tech-icon"},
+      {"id": 3, "name": "React", "class": "bx bxl-react work__modal-tech-icon"},
+      {"id": 4, "name": "Flask", "class": "bx bxl-flask work__modal-tech-icon"},
+      {"id": 5, "name": "Vite", "class": "bx bx-buildings work__modal-tech-icon"},
+      {"id": 3, "name": "CSS", "class": "bx bxl-css3 work__modal-tech-icon"},
+    ],
+  },{
       id: 1,
       image: Work1,
       title: "Sous Chef",
@@ -43,23 +64,6 @@ export const projectsData = [
     ],
     },
     {
-      id: 3,
-      image: Work3,
-      title: "Broadway Community",
-      category: "javascript",
-      link: "https://vimeo.com/939689118?share=copy",
-      modal_description: "Vanilla Javascript price notifications app for Broadway shows at consumers’ desired prices",
-      modal_info: [
-        "Built introductory project for foundational understanding of the basics of HTML, CSS and Javascript",
-        "Implemented eventhandler functions to enable a simple user experience and dynamic user interaction",
-      ],
-      modal_technologies: [
-        {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
-        {"id": 2, "name": "HTML", "class": "bx bxl-html5 work__modal-tech-icon"},
-        {"id": 3, "name": "CSS", "class": "bx bxl-css3 work__modal-tech-icon"},
-      ],
-    },
-    {
       id: 4,
       image: Work4,
       title: "Mojito Budgeting",
@@ -86,9 +90,9 @@ export const projectsData = [
     {
         name: "fullstack",
     },
-    {
-        name: "javascript",
-    },
+    // {
+    //     name: "javascript",
+    // },
     {
         name: "python",
     },
