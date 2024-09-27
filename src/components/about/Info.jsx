@@ -16,9 +16,9 @@ const Info = () => {
         </div>
 
         <div className="about__box">
-          <i class='bx bx-video about__icon'></i>
-          <h3 className="about__title">Featured</h3>
-          <span className="about__subtitle">215mn Youtube Views</span>
+          <i class='bx bx-user about__icon'></i>
+          <h3 className="about__title">Passionate</h3>
+          <span className="about__subtitle">See Interests Below</span>
         </div>
     </div>
   )
