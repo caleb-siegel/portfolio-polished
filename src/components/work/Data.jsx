@@ -8,7 +8,7 @@ export const projectsData = [
     id: 3,
     image: Work3,
     title: "Broadway Community",
-    category: "fullstack",
+    category: "deployed",
     link: "https://broadwaycommunity.vercel.app/",
     modal_description: "Price alert app utilizing Stubhub’s API to display the cheapest ticket to each Broadway show",
     modal_info: [
@@ -25,7 +25,8 @@ export const projectsData = [
       {"id": 5, "name": "Vite", "class": "bx bx-buildings work__modal-tech-icon"},
       {"id": 3, "name": "CSS", "class": "bx bxl-css3 work__modal-tech-icon"},
     ],
-  },{
+  },
+  {
       id: 1,
       image: Work1,
       title: "Sous Chef",
@@ -46,7 +47,7 @@ export const projectsData = [
         {"id": 4, "name": "Flask", "class": "bx bxl-flask work__modal-tech-icon"},
         {"id": 5, "name": "Vite", "class": "bx bx-buildings work__modal-tech-icon"},
         
-    ],
+      ],
     },
     {
       id: 2,
@@ -88,11 +89,11 @@ export const projectsData = [
         name: "all",
     },
     {
+        name: "deployed",
+    },
+    {
         name: "fullstack",
     },
-    // {
-    //     name: "javascript",
-    // },
     {
         name: "python",
     },
