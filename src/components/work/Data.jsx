@@ -10,12 +10,14 @@ export const projectsData = [
     title: "Broadway Community",
     category: "deployed",
     link: "https://broadwaycommunity.vercel.app/",
-    modal_description: "Price alert app utilizing Stubhub’s API to display the cheapest ticket to each Broadway show",
+    modal_description: "Live-event price tracker with email alerts",
     modal_info: [
-      "Utilized Postman to test StubHub API endpoints and generated bearer tokens with API keys for secure data access",
-      "Retrieved and organized ticket data from StubHub API in the backend to enable streamlined frontend communication",
-      "Developed ticket price sliders with Swiper.js, ensuring smooth transitions and touch-friendly navigation",
-      "Integrated affiliate links into ticket pages for revenue generation through the Partnerize platform"
+      "Built full-stack site integrating StubHub, Ticketmaster, and TodayTix APIs to surface best ticket prices for Broadway shows and other events, with embedded affiliate links for seamless purchasing and revenue tracking",
+      "Generated 200+ orders and $10k+ in ticket sales through discovery of 90+% discounts including Wicked for $1, Hamilton for $10, Book of Mormon for $11, Aladdin for $15, and many others",
+      "Developed modular Python code to manipulate and filter event data by price, date, category/event, venue and region",
+      "Implemented CRON jobs via GitHub Actions, reducing load times by 90% by serving cached PostgreSQL data instead of real-time API calls",
+      "Added email alert system allowing users to receive customized price notifications through email provider, SendGrid",
+      "Designed user-driven features including event submission, relative value indicators, fee-adjustments and sorting",
     ],
     modal_technologies: [
       {"id": 1, "name": "Javascript", "class": "bx bxl-javascript work__modal-tech-icon"},
