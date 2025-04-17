@@ -277,6 +277,11 @@
         width: 200px;
     }
 
+    .work__modal-technology-container {
+        display: grid;
+        grid-template-columns: repeat(2, 80px);
+    }
+
     .work__modal-technology {
         justify-content: center;
     }

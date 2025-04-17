@@ -57,14 +57,16 @@ const WorkItems = ({ item }) => {
 
             <div className="work__modal-technologies">
               <div className="work__modal-label">Technologies Used</div>
-              {item.modal_technologies.map((tech) => (
-                <div className="work__modal-technology" key={tech.id}>
-                  <i className={tech.class}></i>
-                  <div>
-                    <h3 className="work__modal-tech-name">{tech.name}</h3>
+              <div className="work__modal-technology-container">
+                {item.modal_technologies.map((tech) => (
+                  <div className="work__modal-technology" key={tech.id}>
+                    <i className={tech.class}></i>
+                    <div>
+                      <h3 className="work__modal-tech-name">{tech.name}</h3>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
