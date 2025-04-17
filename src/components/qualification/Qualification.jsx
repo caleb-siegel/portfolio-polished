@@ -159,6 +159,97 @@ const Qualification = () => {
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
                     <div className="qualification__data">
                             <div>
+                                <h3 className="qualification__title">Lazard</h3>
+                                <span className="qualification__subtitle">Software Engineer</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2025-Present
+                                </div>
+
+                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(3)}>See More
+                                    <i className="uil uil-arrow-right qualification__see-more-button-icon"></i>
+                                </span>
+
+                                <div className={toggleModal === 3 ? "qualification__modal active-modal" : "qualification__modal"}>
+                                    <div className="qualification__modal-content">
+                                        <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
+
+                                        <h3 className="qualification__modal-title">Lazard Asset Management</h3>
+                                        <p className="qualification__modal-description">2025-Present</p>
+
+                                        <ul className="qualification__modal-qualification grid">
+                                            <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Serve as Software Engineer and Business Analyst, supporting Portfolio Management and Risk teams; Focus on maintaining and developing Lazard Asset Management Research and Portfolio Management Dashboards.</p>
+                                            </li>
+                                            {/* <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Frontend written in Angular in Typescript; Backend in Nest.js with Python; utilize SQL for database interactions/manipulations and some C# for backend code.</p>
+                                            </li> */}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">Alchemy Bio</h3>
+                                <span className="qualification__subtitle">Software Engineer Apprentice</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2024-2025
+                                </div>
+
+                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(4)}>See More
+                                    <i className="uil uil-arrow-right qualification__see-more-button-icon"></i>
+                                </span>
+
+                                <div className={toggleModal === 4 ? "qualification__modal active-modal" : "qualification__modal"}>
+                                    <div className="qualification__modal-content">
+                                        <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
+
+                                        <h3 className="qualification__modal-title">Alchemy Bio</h3>
+                                        <p className="qualification__modal-description">2024-2025</p>
+
+                                        <ul className="qualification__modal-qualification grid">
+                                            <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Software Engineer in Astera Institute’s Open Science Program developing social data-sharing platform for biologists.</p>
+                                            </li>
+                                            
+                                            <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Built full-stack CRUD functionality for biologists’ user data using FastAPI to develop backend APIs, SQLAlchemy with PostgreSQL for database interactions, Alembic migrations for schema versioning, and TypeScript with React and Tailwind CSS for the frontend to retrieve and display data seamlessly.</p>
+                                            </li>
+
+                                            <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Collaborated closely with 5-person software engineering team, mastering Git workflow commands to efficiently commit, push, and pull/rebase code while adhering to team structure, ensuring clean, documented commits.</p>
+                                            </li>
+
+                                            <li className="qualification__modal-qual">
+                                                <i className="bx bxs-circle qualification__modal-icon"></i>
+                                                <p className="qualification__modal-info">Developed Product Requirements Document (PRD) for unique Alchemy feature, defining user needs, core functionality, and technical requirements by conducting industry research, analyzing use cases, and scoping feature implementation into engineering workflows, timelines, and development tickets.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="qualification__data">
+                            <div>
                                 <h3 className="qualification__title">Group 8A</h3>
                                 <span className="qualification__subtitle">VP, Marketing</span>
                                 <span className="qualification__subtitle">Director, Paid Search</span>
@@ -169,11 +260,11 @@ const Qualification = () => {
                                     <i className="uil uil-calendar-alt"></i> 2019-2023
                                 </div>
 
-                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(3)}>See More
+                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(7)}>See More
                                     <i className="uil uil-arrow-right qualification__see-more-button-icon"></i>
                                 </span>
 
-                                <div className={toggleModal === 3 ? "qualification__modal active-modal" : "qualification__modal"}>
+                                <div className={toggleModal === 7 ? "qualification__modal active-modal" : "qualification__modal"}>
                                     <div className="qualification__modal-content">
                                         <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
 
@@ -249,11 +340,11 @@ const Qualification = () => {
                                     <i className="uil uil-calendar-alt"></i> 2016-2018
                                 </div>
 
-                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(4)}>See More
+                                <span className="qualification__see-more-button" onClick={() => handleToggleModal(8)}>See More
                                     <i className="uil uil-arrow-right qualification__see-more-button-icon"></i>
                                 </span>
 
-                                <div className={toggleModal === 4 ? "qualification__modal active-modal" : "qualification__modal"}>
+                                <div className={toggleModal === 8 ? "qualification__modal active-modal" : "qualification__modal"}>
                                     <div className="qualification__modal-content">
                                         <i onClick={() => handleToggleModal(0)} className="uil uil-times qualification__modal-close"></i>
 
